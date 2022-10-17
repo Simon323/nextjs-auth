@@ -33,8 +33,6 @@ async function dbConnect() {
     const opts = {
       bufferCommands: false,
     };
-    //TODO: Fix
-    //@ts-ignore
     cached.promise = mongoose.connect(MONGODB_URI, opts).then((mongoose) => {
       return mongoose;
     });
